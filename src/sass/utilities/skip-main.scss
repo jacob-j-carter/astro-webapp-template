@@ -18,5 +18,6 @@
 
   &:focus {
     translate: 0 0;
+    outline-offset: -2px;
   }
 }

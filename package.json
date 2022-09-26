@@ -8,8 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "watch": "sass --watch ./src/sass/global/global.scss ./src/sass/compiled/global.css"
+    "astro": "astro"
+
   },
   "dependencies": {
     "@astrojs/image": "^0.7.1",

@@ -1,5 +1,12 @@
 ---
-import '../sass/compiled/global.css';
+// Global SCSS
+import '../sass/global/global.scss';
+
+// Global Layouts
+import Header from '../layouts/Header.astro';
+import Footer from '../layouts/Footer.astro';
+
+
 
 export interface Props {
   title?: string;
@@ -35,12 +42,9 @@ const { title = "Astro Webapp" } = Astro.props as Props;
     <a href="#main-content" class="skip-main-content">
       Skip to main content
     </a> 
-
-    <!-- === Header === -->
-    <header>
-
-    </header>
    
+    <Header />
+
     <!-- === Main Content === -->
     <main>
      <article id="main-content">   
@@ -50,10 +54,7 @@ const { title = "Astro Webapp" } = Astro.props as Props;
      </article>
     </main>
 
-    <!-- === Footer === -->
-    <footer>
-   
-    </footer>
-    
+    <Footer />
+
   </body>
 </html>
