@@ -1,0 +1,9 @@
+
+@use '../themes' as *;
+@use '../utilities' as *;
+
+
+// Global Animations
+* {
+  transition: all 100ms linear;
+}

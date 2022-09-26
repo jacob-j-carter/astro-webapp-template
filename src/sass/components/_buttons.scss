@@ -1,0 +1,22 @@
+
+@use '../abstracts' as *;
+@use '../themes' as *;
+@use '../utilities' as *;
+
+// Global Button Styling
+
+button {
+  cursor: pointer;
+
+  // Placeholder Values:
+  background-color: black;
+  padding: 1em 2em;
+  border-radius: .25em;
+  color: white;
+  font-weight: 700;
+  font-family: $button-font;
+
+  &:hover {
+    background-color: #1b1b1b;
+  }
+}

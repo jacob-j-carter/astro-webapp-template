@@ -1,0 +1,59 @@
+---
+import '../sass/compiled/global.css';
+
+export interface Props {
+  title?: string;
+}
+
+const { title = "Astro Webapp" } = Astro.props as Props;
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== Font Awesome Icon (optional) ==== -->
+    <!-- <script src="https://kit.fontawesome.com/c735b8632d.js" crossorigin="anonymous"></script> -->
+
+    <!-- ==== SEO ==== -->
+    <title>{title}</title>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <!-- ===  Favicon - 45px x 45px === -->
+    <link rel="icon" type="image/x-icon" href="../assets/image/branding/favicon.png">
+    
+  </head>
+  <body>
+
+    <!-- 'Skip to main content' button for accessability -->
+    <a href="#main-content" class="skip-main-content">
+      Skip to main content
+    </a> 
+
+    <!-- === Header === -->
+    <header>
+
+    </header>
+   
+    <!-- === Main Content === -->
+    <main>
+     <article id="main-content">   
+       
+       <slot />
+
+     </article>
+    </main>
+
+    <!-- === Footer === -->
+    <footer>
+   
+    </footer>
+    
+  </body>
+</html>

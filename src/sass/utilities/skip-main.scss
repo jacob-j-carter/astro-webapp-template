@@ -1,0 +1,22 @@
+@use '../themes' as *;
+
+
+.skip-main-content {
+  background-color: #181818;
+  color: white;
+  position: fixed;
+  height: 3em;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  translate: 0 -100% ; //Makes link hidden for normal users.
+  transition: translate 100ms linear;
+
+  &:focus {
+    translate: 0 0;
+  }
+}
