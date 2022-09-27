@@ -12,9 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   text-decoration: underline;
   translate: 0 -100% ; //Makes link hidden for normal users.
   transition: translate 100ms linear;
+  z-index: 9999;
 
   &:focus {
     translate: 0 0;

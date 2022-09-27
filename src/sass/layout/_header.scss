@@ -3,3 +3,9 @@
 @use '../components' as *;
 @use '../abstracts' as *;
 
+// Header/Navigation Menu
+header {
+  // position:fixed;
+  top:0;
+  z-index: 99;
+}

@@ -1,80 +1,81 @@
 @use '../themes' as *;
 @use '../utilities' as *;
 
-// Responsive Font Sizes:
-$font-128: clamp(6.4rem, 12.8vw + 1rem, 12.8rem);
-$font-72: clamp(3.6rem, 7.2vw + 1rem, 7.2rem);
-$font-64: clamp(3.2rem, 6.4vw + 1rem, 6.4rem);
-$font-56: clamp(2.8rem, 5.6vw + 1rem, 5.6rem);
-$font-48: clamp(2.4rem, 4.8vw + 1rem, 4.8rem);
-$font-40: clamp(2.0rem, 4.0vw + 1rem, 4.0rem);
-$font-36: clamp(1.8rem, 3.6vw + 1rem, 3.6rem);
-$font-32: clamp(1.6rem, 3.2vw + 1rem, 3.2rem);
-$font-28: clamp(1.4rem, 2.8vw + 1rem, 2.8rem);
-$font-24: clamp(1.2rem, 2.4vw + 1rem, 2.4rem);
-$font-22: clamp(1.1rem, 2.2vw + 1rem, 2.2rem);
-$font-20: clamp(1.0rem, 2.0vw + 1rem, 2.0rem);
-$font-18: clamp(0.9rem, 1.8vw + 1rem, 1.8rem);
-$font-16: clamp(0.8rem, 1.6vw + 1rem, 1.6rem);
-$font-14: clamp(0.7rem, 1.4vw + 1rem, 1.4rem);
-$font-12: clamp(0.6rem, 1.2vw + 1rem, 1.2rem);
-$font-10: clamp(0.5rem, 1.0vw + 1rem, 1.0rem);
-$font-8: clamp(0.4rem, 0.8vw + 1rem, 0.8rem);
 
-// Design System Font Sizes:
+
+// ==== Responsive Font Sizes ====
+@mixin font-size($size, $sizevw) {
+
+  // Headings will change sizes much quicker.
+  @if $size >= 28 {
+    font-size: clamp($size * .05 * 1/3, $sizevw * .1, $size * .1);
+  }
+  // Body/Smaller text will remain at a visible size.
+  @else {
+    font-size: clamp($size * .275 * 1/3, $sizevw * .05, $size * .2);
+  }
+}
+
+// === Default classes to use in HTML ===
 .font-size-128 {
-  font-size: $font-128;
+  @include font-size(128rem, 128vw);
+} 
+.font-size-96 {
+  @include font-size(96rem, 96vw);
+} 
+.font-size-84 {
+  @include font-size(84rem, 84vw);
 } 
 .font-size-72 {
-  font-size: $font-72;
+  @include font-size(72rem, 72vw);
 } 
 .font-size-64 {
-  font-size: $font-64;
+  @include font-size(64rem, 64vw);
 } 
 .font-size-56 {
-  font-size: $font-56;
+  @include font-size(56rem, 56vw);
 } 
 .font-size-48 {
-  font-size: $font-48;
+  @include font-size(48rem, 48vw);
 } 
 .font-size-40 {
-  font-size: $font-40;
+  @include font-size(40rem, 40vw);
 } 
 .font-size-36 {
-  font-size: $font-36;
+  @include font-size(36rem, 36vw);
 } 
 .font-size-32 {
-  font-size: $font-32;
+  @include font-size(32rem, 32vw);
 } 
 .font-size-28 {
-  font-size: $font-28;
+  @include font-size(28rem, 28vw);
 } 
 .font-size-24 {
-  font-size: $font-24;
+  @include font-size(24rem, 24vw);
 } 
 .font-size-22 {
-  font-size: $font-22;
+  @include font-size(22rem, 22vw);
 } 
 .font-size-20 {
-  font-size: $font-20;
+  @include font-size(20rem, 20vw);
 } 
 .font-size-18 {
-  font-size: $font-18;
+  @include font-size(18rem, 18vw);
 } 
 .font-size-16 {
-  font-size: $font-16;
+  @include font-size(16rem, 16vw);
 } 
 .font-size-14 {
-  font-size: $font-14;
+  @include font-size(14rem, 14vw);
 } 
 .font-size-12 {
-  font-size: $font-12;
+  @include font-size(12rem, 12vw);
 } 
 .font-size-10 {
-  font-size: $font-10;
+  @include font-size(10rem, 10vw);
 } 
 .font-size-8 {
-  font-size: $font-8;
+  @include font-size(8rem, 8vw);
 } 
 
 // === Fonts ===
@@ -88,7 +89,6 @@ $body-font: 'Roboto', sans-serif;
 html {
   // Converts 1rem unit to 10px for easier calculations:
   font-size: 62.5%;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -106,29 +106,29 @@ a {
 }
 
 // === Default Element Font Sizes ===
-// Headings:
+// == Headings ==
 h1 {
-  font-size: $font-64;
+  @include font-size(72rem, 72vw);
 }
 h2 {
-  font-size: $font-56;
+  @include font-size(64rem, 64vw);
 }
 h3 {
-  font-size: $font-48;
+  @include font-size(48rem, 48vw);
 }
 h4 {
-  font-size: $font-40;
+  @include font-size(36rem, 36vw);
 }
 h5 {
-  font-size: $font-36;
+  @include font-size(28rem, 28vw);
 }
 h6 {
-  font-size: $font-28;
+  @include font-size(24rem, 24vw);
 }
 
-// Body Text:
+// == Body Text ==
 p, a, b, strong, em, i, button, mark {
-  font-size: $font-16;
+  @include font-size(16rem, 16vw);
   // Sets line-height for all non-heading text:
   line-height: 140%;
   font-family: $body-font;
