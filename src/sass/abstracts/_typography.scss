@@ -5,16 +5,17 @@
 
 // ==== Responsive Font Sizes ====
 @mixin font-size($size, $sizevw) {
-
-  // Headings will change sizes much quicker.
-  @if $size >= 28 {
-    font-size: clamp($size * .05 * 1/3, $sizevw * .1, $size * .1);
+  @if $size >= 36 {
+    font-size: clamp($size * .2 * 1/3, $sizevw * .1, $size * .1);
   }
-  // Body/Smaller text will remain at a visible size.
+  @else if $size >= 24 {
+    font-size: clamp($size * .225 * 1/3, $sizevw * .1, $size * .1);
+  }
   @else {
     font-size: clamp($size * .275 * 1/3, $sizevw * .05, $size * .2);
   }
 }
+
 
 // === Default classes to use in HTML ===
 .font-size-128 {
