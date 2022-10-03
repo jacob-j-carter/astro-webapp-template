@@ -1,6 +1,7 @@
 
 @forward '../utilities/sr-only';
 @forward '../utilities/skip-main';
+@forward '../utilities/scrollbar';
 
 :focus {
   outline: 2px white solid;
