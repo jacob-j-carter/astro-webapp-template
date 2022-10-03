@@ -17,7 +17,7 @@
 }
 
 body {
-  min-height: 150vh;
+  min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
   top: 0;
@@ -33,9 +33,12 @@ html {
 }
 
 main {
-  // Creating a wrapper to not exceed a width of over 1200px:
-  width: 1200px;
-  max-width: 100vw;
   min-height: 100vh;
+}
+
+article {
+  // Creating a wrapper to not exceed a width of over 1200px:
+  width: 120em;
+  max-width: 100vw;
 }
 

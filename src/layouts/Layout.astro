@@ -47,12 +47,10 @@ const { title = "Astro Webapp" } = Astro.props as Props;
     <Header />
 
     <!-- === Main Content === -->
-    <main>
-     <article id="main-content">   
+    <main id="main-content" class="w-screen">
        
        <slot />
 
-     </article>
     </main>
 
     <Footer />
