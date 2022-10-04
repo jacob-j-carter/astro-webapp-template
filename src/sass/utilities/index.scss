@@ -1,7 +1,7 @@
 
-@forward '../utilities/sr-only';
-@forward '../utilities/skip-main';
-@forward '../utilities/scrollbar';
+@forward './sr-only';
+@forward './skip-main';
+@forward './scrollbar';
 
 :focus {
   outline: 2px cornflowerblue solid;
