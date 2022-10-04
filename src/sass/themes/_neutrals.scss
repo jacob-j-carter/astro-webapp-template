@@ -1,0 +1,19 @@
+
+// === Grays ===
+
+@mixin gray-bg ($shade) {
+  background-color: hsl(0, 0%, (100%-$shade));
+}
+@mixin gray-color ($shade) {
+  color: hsl(0, 0%, (100%-$shade));
+}
+
+$gray-10: hsl(0, 0%, (100%-10%));
+$gray-20: hsl(0, 0%, (100%-10%));
+$gray-30: hsl(0, 0%, (100%-10%));
+$gray-40: hsl(0, 0%, (100%-10%));
+$gray-50: hsl(0, 0%, (100%-10%));
+$gray-60: hsl(0, 0%, (100%-10%));
+$gray-70: hsl(0, 0%, (100%-10%));
+$gray-80: hsl(0, 0%, (100%-10%));
+$gray-90: hsl(0, 0%, (100%-10%));
