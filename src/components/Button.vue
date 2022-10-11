@@ -1,6 +1,6 @@
 <template>
   <a :href="HREF">
-    <button :class="[span ? 'span' : '']">
+    <button :class="[span ? 'span' : '']" class="py-4 px-8 rounded-xl text-white">
       {{ content }}
     </button>
   </a>
@@ -18,7 +18,7 @@ export default {
     },
     content: {
       type: String,
-      default: 'Click Me!'
+      default: 'Button Text'
     },
     span: {
       type: Boolean,
@@ -37,6 +37,11 @@ export default {
   button {
     background-color: $primary-50;
     font-weight: 700;
+    
+
+    &:hover {
+      background-color: $primary-60;
+    }
   }
 
   .span {

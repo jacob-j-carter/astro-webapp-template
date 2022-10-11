@@ -8,13 +8,6 @@ button {
   cursor: pointer;
 
   // Placeholder Values:
-  background-color: black;
-  padding: 1em 2.5em;
-  border-radius: .25em;
-  color: white;
   font-family: $button-font;
 
-  &:hover {
-    background-color: #1b1b1b;
-  }
 }
