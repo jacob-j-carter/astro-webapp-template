@@ -18,18 +18,23 @@
 
 body {
   min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: clip;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 html {
   // Makes anchor links silky smooth 😎
   scroll-behavior: smooth;
+
+  max-width: 100%;
+  overflow-x: clip;
+
 }
 
 main {
