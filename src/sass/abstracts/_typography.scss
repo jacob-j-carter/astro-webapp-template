@@ -83,6 +83,15 @@ $heading-font: sans-serif;
 $button-font: sans-serif;
 $body-font: sans-serif;
 
+.heading-font {
+  font-family: $heading-font;
+}
+.button-font {
+  font-family: $button-font;
+}
+.body-font {
+  font-family: $body-font;
+}
 
 
 // ==== Text Styling ====
