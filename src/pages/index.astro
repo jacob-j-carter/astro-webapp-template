@@ -1,14 +1,12 @@
 ---
 
-// Importing default HTML
+// Importing components
 import Layout from "../layouts/Layout.astro";
+import Placeholder from "../components/Placeholder.vue";
 
 // Importing local SCSS
 import '../sass/p_homepage/index.scss';
 
-// == Images ==
-// Images must be placed in the public folder. You can link to them.
-// e.g. src="/assets/images/photos/random-photo.png".
 
 let titleHeader = "Hello World";
 
@@ -17,12 +15,7 @@ let titleHeader = "Hello World";
 <Layout title={'Homepage'}>
 	<!-- HTML content -->
 
-	<article>
-		<h1>{titleHeader}</h1>
-		<button>
-			Hey There!
-		</button>
-	</article>
+	
 	
 
 </Layout>
