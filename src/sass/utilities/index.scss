@@ -1,9 +1,5 @@
-
-@forward './sr-only';
 @forward './skip-main';
 @forward './scrollbar';
+@forward './focus';
+@forward './selection';
 
-:focus {
-  outline: 2px cornflowerblue solid;
-  outline-offset: 2px;
-}
