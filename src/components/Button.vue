@@ -1,6 +1,6 @@
 <template>
   <a :href="HREF">
-    <button>
+    <button :class="[span ? 'span' : '']">
       {{ content }}
     </button>
   </a>
@@ -20,6 +20,10 @@ export default {
       type: String,
       default: 'Click Me!'
     },
+    span: {
+      type: Boolean,
+      default: false
+    },
   }
 }
 
@@ -30,6 +34,13 @@ export default {
   @use '../sass/abstracts' as *;
   @use '../sass/themes' as *;
 
+  button {
+    background-color: $primary-50;
+    font-weight: 700;
+  }
 
+  .span {
+    width: 100%;
+  }
 
 </style>
