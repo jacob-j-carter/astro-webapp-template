@@ -3,6 +3,8 @@
 // Importing components
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.vue";
+import { Icon } from 'astro-icon';
+
 
 // Importing local SCSS
 import '../sass/p_homepage/index.scss';
@@ -15,7 +17,8 @@ let currentPage = "home";
 <Layout title={'Homepage'}>
 	<!-- HTML content -->
 
-	
+	<Icon name="fe:camera" class="w-8 text-orange-600" />
+	<Icon name="arrow-left" class="w-8 text-red-600" />
 	
 
 </Layout>
