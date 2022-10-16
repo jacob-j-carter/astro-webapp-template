@@ -1,14 +1,22 @@
 <template>
   <div>
 
+    <DesktopHeader />
+
+    <MobileHeader />
+
+
   </div>
 </template>
 
 
 <script lang="ts">
+import DesktopHeader from "./DesktopHeader.vue";
+import MobileHeader from "./MobileHeader.vue";
 
 export default {
-  name: 'Header'
+    name: "Header",
+    components: { DesktopHeader, MobileHeader }
 }
 
 </script>
