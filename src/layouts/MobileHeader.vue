@@ -1,14 +1,20 @@
 <template>
-  <div>
+  <div class="lg:hidden ">
+
+    <BurgerMenu />
+    
 
   </div>
 </template>
 
 
 <script lang="ts">
+import BurgerMenu from "../components/BurgerMenu.vue";
+import { Icon } from 'astro-icon';
 
 export default {
-  name: 'Placeholder'
+    name: "Placeholder",
+    components: { BurgerMenu, Icon }
 }
 
 </script>

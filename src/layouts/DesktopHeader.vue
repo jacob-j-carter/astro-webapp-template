@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hidden lg:flex">
 
   </div>
 </template>
