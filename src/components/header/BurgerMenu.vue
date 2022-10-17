@@ -1,7 +1,7 @@
 <template>
   <div :class="[navHidden ? '' : 'overlay-on']" >
     <nav
-      class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-20"
+      class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-30"
       :class="[navHidden ? 'nav-hidden' : '']"
     >
       <div @click="toggleNav()">
@@ -24,8 +24,8 @@
 </template>
 
 <script lang="ts">
-import pageData from "../data/pageData.json";
-import Button from "./Button.vue";
+import pageData from "../../data/pageData.json";
+import Button from "../Button.vue";
 
 export default {
   name: "BurgerMenu",
@@ -56,8 +56,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @use "../sass/abstracts" as *;
-  @use "../sass/themes" as *;
+  @use '../../sass/abstracts' as *;
+  @use '../../sass/themes' as *;
 
   nav {
     height: 100vh;
@@ -75,7 +75,7 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 20;
     background-color: black;
     opacity: .75;
   }

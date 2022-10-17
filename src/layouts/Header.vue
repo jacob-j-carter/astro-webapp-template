@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
 
     <DesktopHeader />
 
@@ -11,8 +11,8 @@
 
 
 <script lang="ts">
-import DesktopHeader from "./DesktopHeader.vue";
-import MobileHeader from "./MobileHeader.vue";
+import DesktopHeader from "../components/header/DesktopHeader.vue";
+import MobileHeader from "../components/header/MobileHeader.vue";
 
 export default {
     name: "Header",
