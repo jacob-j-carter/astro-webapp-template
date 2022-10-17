@@ -1,19 +1,18 @@
 <template>
   <div class="lg:hidden ">
 
-    <BurgerMenu />
+    <BurgerMenu client:load />
 
   </div>
 </template>
 
 
 <script lang="ts">
-import { Icon } from 'astro-icon';
 import BurgerMenu from '../components/BurgerMenu.vue';
 
 export default {
     name: "MobileHeader",
-    components: { Icon, BurgerMenu }
+    components: { BurgerMenu }
 }
 
 </script>

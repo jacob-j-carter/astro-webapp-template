@@ -1,37 +1,70 @@
 <template>
-  <div class="w-screen">
+  <div :class="[navHidden ? 'overlay-on' : '']" >
+    <nav
+      class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-20"
+      :class="[navHidden ? 'nav-hidden' : '']"
+    >
+      <div @click="toggleNav()">
+        <img
+          src="/assets/images/icons/close.svg"
+          alt="close menu button"
+          class="absolute right-4 top-4 w-8 h-8"
+        />
+      </div>
 
-    <nav class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-20">
-      
-      <Icon name="codicon:close" class="w-16 h-16 text-white font-size-48" />
-
+      <div :key="page.pageName" v-for="page in pages" class="my-4">
+        <a :href="page.pageHREF">
+          <h3 class="uppercase text-white">
+            {{ page.pageName }}
+          </h3>
+        </a>
+      </div>
     </nav>
-
   </div>
 </template>
 
-
 <script lang="ts">
-
-import { Icon } from '@iconify/vue';
+import pageData from "../data/pageData.json";
+import Button from "./Button.vue";
 
 export default {
-  name: 'BurgerMenu',
+  name: "BurgerMenu",
   components: {
-    Icon
-  }
-}
+    Button
+},
+  props: {
+    pageArrNumber: {
+      type: Number,
+      default: 0,
+    },
+  },
+  data () {
+    return {
+      pages: pageData,
+      navHidden: false
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.navHidden = !this.navHidden
+    }
+  },
+  created() {
 
+  },
+};
 </script>
 
-
 <style scoped lang="scss">
-  @use '../sass/abstracts' as *;
-  @use '../sass/themes' as *;
+  @use "../sass/abstracts" as *;
+  @use "../sass/themes" as *;
 
   nav {
     height: 100vh;
   }
 
+  .nav-hidden {
+    translate: 100% 0;
+  }
 
 </style>

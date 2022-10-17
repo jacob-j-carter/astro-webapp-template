@@ -1,0 +1,10 @@
+[
+  {
+    "pageName": "home",
+    "pageHREF": "/"
+  },
+  {
+    "pageName": "about",
+    "pageHREF": "/about"
+  }
+]

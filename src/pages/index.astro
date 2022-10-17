@@ -1,5 +1,8 @@
 ---
 
+// Importing data
+import pageData from '../data/pageData.json';
+
 // Importing components
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.vue";
@@ -10,11 +13,11 @@ import { Icon } from 'astro-icon';
 import '../sass/p_homepage/index.scss';
 
 
-let currentPage = "home";
+let currentPage = pageData[0];
 
 ---
 
-<Layout title={'Homepage'}>
+<Layout title={'Homepage'} >
 	<!-- HTML content -->
 
 	<Icon name="fe:camera" class="w-8 text-orange-600" />
