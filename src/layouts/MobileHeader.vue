@@ -2,19 +2,18 @@
   <div class="lg:hidden ">
 
     <BurgerMenu />
-    
 
   </div>
 </template>
 
 
 <script lang="ts">
-import BurgerMenu from "../components/BurgerMenu.vue";
 import { Icon } from 'astro-icon';
+import BurgerMenu from '../components/BurgerMenu.vue';
 
 export default {
-    name: "Placeholder",
-    components: { BurgerMenu, Icon }
+    name: "MobileHeader",
+    components: { Icon, BurgerMenu }
 }
 
 </script>
