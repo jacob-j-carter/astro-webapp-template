@@ -3,7 +3,7 @@
 
     <nav class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-20">
       
-      <Icon name="codicon:close" />
+      <Icon name="codicon:close" class="w-16 h-16 text-white font-size-48" />
 
     </nav>
 
@@ -13,10 +13,13 @@
 
 <script lang="ts">
 
-import { Icon } from 'astro-icon';
+import { Icon } from '@iconify/vue';
 
 export default {
-  name: 'BurgerMenu'
+  name: 'BurgerMenu',
+  components: {
+    Icon
+  }
 }
 
 </script>
