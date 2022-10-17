@@ -1,5 +1,5 @@
 <template>
-  <div :class="[navHidden ? 'overlay-on' : '']" >
+  <div :class="[navHidden ? '' : 'overlay-on']" >
     <nav
       class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-20"
       :class="[navHidden ? 'nav-hidden' : '']"
@@ -65,6 +65,19 @@ export default {
 
   .nav-hidden {
     translate: 100% 0;
+  }
+
+  .overlay-on::after {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: black;
+    opacity: .75;
   }
 
 </style>
