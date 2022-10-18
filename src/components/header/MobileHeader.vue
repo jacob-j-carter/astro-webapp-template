@@ -1,7 +1,7 @@
 <template>
   <div class="lg:hidden w-full">
 
-    <MobileButtons @toggle-menu="openMenu()" />
+    <MobileButtons @toggle-menu="toggleMenu()" />
 
     <BurgerMenu :navHiddenProp="navHiddenProp" client:load />
 
@@ -23,7 +23,7 @@ export default {
       }
     },
     methods: {
-      openMenu() {
+      toggleMenu() {
         this.navHiddenProp = !this.navHiddenProp
       }
     },

@@ -8,7 +8,7 @@
     </a>
   </div>
 
-  <div class="w-16 h-16 bg-stone-500 rounded-xl p-2" @click="openMenu()">
+  <div class="w-16 h-16 bg-stone-500 rounded-xl p-2" @click="$emit('toggle-menu')">
     <img src="/assets/images/icons/burgermenu.svg" alt="logo" class="w-full">
   </div>
 
@@ -21,22 +21,20 @@
 
 export default {
   name: 'MobileButtons',
-  props: {
+  // props: {
 
-  },
-  data () {
-    return {
+  // },
+  // data () {
+  //   return {
       
-    }
-  },
-  methods: {
-    openMenu() {
-      this.$emit('toggle-menu')
-    }
-  },
-  created () {
+  //   }
+  // },
+  // methods: {
 
-  }
+  // },
+  // created () {
+
+  // }
 }
 
 </script>
