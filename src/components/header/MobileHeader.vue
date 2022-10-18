@@ -5,7 +5,6 @@
 
     <BurgerMenu @close-nav="toggleMenu()" :pageName="pageName" :navHidden="navHidden"/>
 
-
   </div>
 </template>
 
@@ -24,7 +23,7 @@ export default {
     },
     data () {
       return {
-        navHidden: true
+        navHidden: true,
       }
     },
     methods: {

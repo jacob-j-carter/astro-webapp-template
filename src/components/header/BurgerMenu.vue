@@ -5,11 +5,7 @@
       :class="[navHidden ? 'nav-hidden' : '']"
     >
       <div @click="$emit('close-nav')">
-        <img
-          src="/assets/images/icons/close.svg"
-          alt="close menu button"
-          class="absolute right-4 top-4 w-8 h-8"
-        />
+        <Icon icon="ei:close" width="32" class="text-white absolute right-4 top-4 w-8 h-8" />
       </div>
 
       <div :key="page.pageName" v-for="page in pages" class="my-4">
@@ -26,11 +22,14 @@
 <script lang="ts">
 import pageData from "../../data/pageData.json";
 import Button from "../Button.vue";
+import { Icon } from '@iconify/vue';
+
 
 export default {
   name: "BurgerMenu",
   components: {
-    Button
+    Button,
+    Icon
 },
   props: {
     pageName: {

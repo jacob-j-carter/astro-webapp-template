@@ -8,9 +8,13 @@
 
 
 <script lang="ts">
+import { Icon } from '@iconify/vue';
 
 export default {
   name: 'Placeholder',
+  components: {
+		Icon,
+	},
   // props: {
 
   // },

@@ -4,12 +4,13 @@
 
   <div class="w-16 h-16 bg-stone-500 rounded-xl p-2">
     <a href="/">
-      <img src="/favicon.svg" alt="logo">
+      <Icon icon="carbon:logo-vue" width="100%" class="text-white" />
     </a>
   </div>
 
   <div class="w-16 h-16 bg-stone-500 rounded-xl p-2" @click="$emit('toggle-menu')">
-    <img src="/assets/images/icons/burgermenu.svg" alt="logo" class="w-full">
+
+    <Icon icon="cil:hamburger-menu" width="100%" class="text-white" />
   </div>
 
   </section>
@@ -18,9 +19,13 @@
 
 
 <script lang="ts">
+import { Icon } from '@iconify/vue';
 
 export default {
   name: 'MobileButtons',
+  components: {
+		Icon,
+	},
   // props: {
 
   // },
