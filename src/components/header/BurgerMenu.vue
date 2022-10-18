@@ -4,7 +4,7 @@
       class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-30"
       :class="[navHidden ? 'nav-hidden' : '']"
     >
-      <div @click="toggleNav()">
+      <div @click="$emit('close-nav')">
         <img
           src="/assets/images/icons/close.svg"
           alt="close menu button"
@@ -37,18 +37,17 @@ export default {
       type: Number,
       default: 0,
     },
-    navHiddenProp: Boolean
+    navHidden: {
+      type: Boolean
+    }
   },
   data () {
     return {
       pages: pageData,
-      navHidden: this.navHiddenProp
     };
   },
   methods: {
-    toggleNav() {
-      this.navHidden = !this.navHidden
-    }
+
   },
   created() {
     

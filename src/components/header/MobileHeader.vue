@@ -1,9 +1,9 @@
 <template>
   <div class="lg:hidden w-full">
 
-    <MobileButtons @toggle-menu="toggleMenu()" />
+    <MobileButtons @toggle-menu="toggleMenu()"/>
 
-    <BurgerMenu :navHiddenProp="navHiddenProp" client:load />
+    <BurgerMenu @close-nav="toggleMenu()" :navHidden="navHidden"/>
 
 
   </div>
@@ -19,12 +19,13 @@ export default {
     components: { BurgerMenu, MobileButtons },
     data () {
       return {
-        navHiddenProp: true
+        navHidden: true
       }
     },
     methods: {
       toggleMenu() {
-        this.navHiddenProp = !this.navHiddenProp
+        console.log("yesss")
+        this.navHidden = !this.navHidden
       }
     },
 

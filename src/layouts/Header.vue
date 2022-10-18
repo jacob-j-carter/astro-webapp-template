@@ -3,7 +3,7 @@
 
     <DesktopHeader />
 
-    <MobileHeader client:load />
+    <MobileHeader />
 
 
   </div>
