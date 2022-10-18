@@ -1,7 +1,7 @@
 <template>
   <div :class="[navHidden ? '' : 'overlay-on']" >
     <nav
-      class="bg-stone-600 w-2/3 right-0 flex flex-col items-center justify-center fixed z-30"
+      class="bg-stone-600 w-2/3 md:w-2/5 right-0 flex flex-col items-center justify-center fixed z-30"
       :class="[navHidden ? 'nav-hidden' : '']"
     >
       <div @click="$emit('close-nav')">
