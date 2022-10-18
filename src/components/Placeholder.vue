@@ -11,20 +11,20 @@
 
 export default {
   name: 'Placeholder',
-  props: {
+  // props: {
 
-  },
-  data () {
-    return {
+  // },
+  // data () {
+  //   return {
       
-    }
-  },
-  methods: {
+  //   }
+  // },
+  // methods: {
 
-  },
-  created () {
+  // },
+  // created () {
 
-  }
+  // }
 }
 
 </script>
