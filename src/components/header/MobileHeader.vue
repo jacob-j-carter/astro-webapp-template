@@ -9,13 +9,13 @@
         </a>
       </div>
 
-      <div class="w-16 h-16 bg-stone-500 rounded-xl p-2">
+      <div class="w-16 h-16 bg-stone-500 rounded-xl p-2" @click="openMenu()">
         <img src="/assets/images/icons/burgermenu.svg" alt="logo" class="w-full">
       </div>
 
     </section>
 
-    <BurgerMenu client:load />
+    <BurgerMenu :navHiddenProp="navHiddenProp" client:load />
 
 
   </div>
@@ -27,7 +27,19 @@ import BurgerMenu from './BurgerMenu.vue';
 
 export default {
     name: "MobileHeader",
-    components: { BurgerMenu }
+    components: { BurgerMenu },
+    data () {
+      return {
+        navHiddenProp: true
+      }
+    },
+    methods: {
+      openMenu() {
+        this.navHiddenProp = !this.navHiddenProp
+        console.log("Yippie!")
+      }
+    },
+
 }
 
 </script>

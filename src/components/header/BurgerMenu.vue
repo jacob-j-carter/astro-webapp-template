@@ -37,11 +37,12 @@ export default {
       type: Number,
       default: 0,
     },
+    navHiddenProp: Boolean
   },
   data () {
     return {
       pages: pageData,
-      navHidden: true
+      navHidden: this.navHiddenProp
     };
   },
   methods: {
@@ -50,7 +51,7 @@ export default {
     }
   },
   created() {
-
+    
   },
 };
 </script>

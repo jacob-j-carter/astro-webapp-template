@@ -7,6 +7,10 @@ import Header from '../layouts/Header.vue';
 import Footer from '../layouts/Footer.vue';
 
 
+// Cheeky Components
+import Coffee from '../components/Coffee.astro'
+
+
 
 
 export interface Props {
@@ -42,19 +46,18 @@ const { title = "Astro Webapp" } = Astro.props as Props;
     
   </head>
   <body>
-
+    
     <!-- 'Skip to main content' button for accessability -->
     <a href="#main-content" class="skip-main-content">
       Skip to main content
     </a> 
    
     <Header client:load />
-
+    <Coffee />
     <!-- === Main Content === -->
     <main id="main-content" class="w-screen">
-       
-       <slot />
 
+       <slot />
 
     </main>
 
