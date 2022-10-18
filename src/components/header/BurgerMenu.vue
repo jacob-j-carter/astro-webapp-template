@@ -61,6 +61,7 @@ export default {
 
   nav {
     height: 100vh;
+    transition: translate 150ms linear;
   }
 
   .nav-hidden {
@@ -77,7 +78,17 @@ export default {
     bottom: 0;
     z-index: 20;
     background-color: black;
+    animation: darken 150ms linear;
     opacity: .75;
+
+    @keyframes darken {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: .75;
+      }
+    }
   }
 
 </style>
