@@ -14,7 +14,7 @@
 
       <div :key="page.pageName" v-for="page in pages" class="my-4">
         <a :href="page.pageHREF">
-          <h3 class="uppercase text-white">
+          <h3 class="uppercase text-white" :class="[pageName == page.pageName ? 'underline' : '']">
             {{ page.pageName }}
           </h3>
         </a>
@@ -33,9 +33,8 @@ export default {
     Button
 },
   props: {
-    pageArrNumber: {
-      type: Number,
-      default: 0,
+    pageName: {
+      type: String
     },
     navHidden: {
       type: Boolean

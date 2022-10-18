@@ -15,9 +15,10 @@ import Coffee from '../components/Coffee.astro'
 
 export interface Props {
   title?: string;
+  page?: string;
 }
 
-const { title = "Astro Webapp" } = Astro.props as Props;
+const { title = "Astro Webapp", page } = Astro.props as Props;
 
 ---
 
@@ -52,7 +53,8 @@ const { title = "Astro Webapp" } = Astro.props as Props;
       Skip to main content
     </a> 
    
-    <Header client:load />
+    <Header client:load pageName={page} />
+
     <Coffee />
     <!-- === Main Content === -->
     <main id="main-content" class="w-screen">

@@ -3,7 +3,7 @@
 
     <MobileButtons @toggle-menu="toggleMenu()"/>
 
-    <BurgerMenu @close-nav="toggleMenu()" :navHidden="navHidden"/>
+    <BurgerMenu @close-nav="toggleMenu()" :pageName="pageName" :navHidden="navHidden"/>
 
 
   </div>
@@ -17,6 +17,11 @@ import MobileButtons from './MobileButtons.vue';
 export default {
     name: "MobileHeader",
     components: { BurgerMenu, MobileButtons },
+    props: {
+      pageName: {
+        type: String
+      }
+    },
     data () {
       return {
         navHidden: true

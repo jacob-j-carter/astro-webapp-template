@@ -1,10 +1,9 @@
 <template>
   <div class="w-full">
 
-    <DesktopHeader />
+    <DesktopHeader :pageName="pageName" />
 
-    <MobileHeader />
-
+    <MobileHeader :pageName="pageName" />
 
   </div>
 </template>
@@ -16,7 +15,12 @@ import MobileHeader from "../components/header/MobileHeader.vue";
 
 export default {
     name: "Header",
-    components: { DesktopHeader, MobileHeader }
+    components: { DesktopHeader, MobileHeader },
+    props: {
+      pageName: {
+        type: String
+      }
+    }
 }
 
 </script>

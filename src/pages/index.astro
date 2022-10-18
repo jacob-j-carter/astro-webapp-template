@@ -13,15 +13,12 @@ import { Icon } from 'astro-icon';
 import '../sass/p_homepage/index.scss';
 
 
-let currentPage = pageData[0];
+let currentPage = pageData[0].pageName;
 
 ---
 
-<Layout title={'Homepage'} >
+<Layout title={'Homepage'} page={currentPage} >
 	<!-- HTML content -->
-
-	<Icon name="fe:camera" class="w-8 text-orange-600" />
-	<Icon name="arrow-left" class="w-8 text-red-600" />
 	
 
 </Layout>
