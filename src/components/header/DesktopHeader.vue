@@ -20,6 +20,7 @@
 
 <script lang="ts">
 import pageData from '../../data/pageData.json';
+import { Icon } from '@iconify/vue';
 
 export default {
   name: 'DesktopHeader',
@@ -31,6 +32,20 @@ export default {
       pages: pageData,
     };
   },
+  components: {
+		Icon,
+	},
+  // data () {
+  //   return {
+      
+  //   }
+  // },
+  // methods: {
+
+  // },
+  // created () {
+
+  // }
 }
 
 </script>

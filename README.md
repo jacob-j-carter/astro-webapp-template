@@ -1,32 +1,27 @@
-# 🚀 Astro Webapp Template:
+# 🚀 **Astro Webapp Template**:
 
 Documentation for this isn't exceptionally deep, as I expect myself to be the only user of this repo. If you'd like to start from this repo yourself, however, Astro provides great documentation [here](https://docs.astro.build/en/getting-started/).
 
 Luckily, Astro provides magical support for most frameworks and libraries anyone might want to use. Unlike Webpack, Astro really does most of the work for you.
 
-## 📑 Instructions:
+---
 
-#### **npm installs:**
+## 📑 **Instructions**:
 
-```
-npm install
-```
 
-#### How to start:
-
-In development do:
+**Development environment:**
 
 ```
 npm run dev
 ```
 
-For production, do:
+**Production environment**:
 
 ```
 npm run build
 ```
 
-To detach from git, run:
+**Detach from git**:
 
 ```
 rm -r -f .git

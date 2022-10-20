@@ -6,9 +6,27 @@
 
 
 <script lang="ts">
+import { Icon } from '@iconify/vue';
 
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  components: {
+		Icon,
+	},
+  // props: {
+
+  // },
+  // data () {
+  //   return {
+      
+  //   }
+  // },
+  // methods: {
+
+  // },
+  // created () {
+
+  // }
 }
 
 </script>
