@@ -1,6 +1,6 @@
 <template>
 
-  <section class="flex justify-between items-center w-full p-2 mx-auto absolute z-10">
+  <header class="flex justify-between items-center w-full p-2 mx-auto absolute z-10">
 
   <div class="w-16 h-16 bg-stone-500 rounded-xl p-2">
     <a href="/">
@@ -13,7 +13,7 @@
     <Icon icon="cil:hamburger-menu" width="100%" class="text-white" />
   </div>
 
-  </section>
+  </header>
 
 </template>
 
