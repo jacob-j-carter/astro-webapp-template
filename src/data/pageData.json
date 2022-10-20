@@ -2,13 +2,5 @@
   {
     "pageName": "home",
     "pageHREF": "/"
-  },
-  {
-    "pageName": "about",
-    "pageHREF": "/about"
-  },
-  {
-    "pageName": "services",
-    "pageHREF": "/services"
   }
 ]
