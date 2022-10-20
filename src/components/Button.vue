@@ -36,7 +36,9 @@ export default {
 
   button {
     background-color: $primary-50;
+    font-family: $button-font;
     font-weight: 700;
+    cursor: pointer;
     
 
     &:hover {
