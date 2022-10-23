@@ -100,6 +100,7 @@ export default {
   h2 {
     font-family: 'Felix', 'Montserrat' ,sans-serif;
     max-width: 10em;
+    font-weight: normal;
   }
 
   strong, p, a {
