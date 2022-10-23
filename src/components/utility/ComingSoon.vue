@@ -30,7 +30,7 @@
         Thank you for being patient. We’re doing some work on the website, so feel free to check back in later. If you have any inquiries please don’t hesitate to contact me through my details below:
       </p>
 
-      <div class="mt-2 md:mt-16">
+      <div class="mt-2 md:mt-8">
         <div class="flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>
           <a href="mailto:jacob@choicedigital.studio" class="text-white font-size-20 underline ml-4">
