@@ -87,8 +87,15 @@ export default {
 
   main {
     z-index: 9999;
-    background-color: #0e0e0e;
     max-height: 100vh;
+
+    background-color: #0E0E0E;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath id='a' data-color='outline' fill='none' stroke='%23181818' stroke-width='15' d='M50 47.5v5M52.5 50h-5'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 
     
   }
