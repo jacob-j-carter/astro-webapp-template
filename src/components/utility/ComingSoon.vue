@@ -1,13 +1,15 @@
 <template>
 
-  <main class="absolute top-0 left-0 bottom-0 right-0 flex items-center px-20">
+  <main class="fixed top-0 left-0 bottom-0 right-0 flex items-center px-20">
 
     <article class="w-2/3">
       <a href="https://onegoodcard.me/profile/jacobcarter" target="_blank">
 
         <div class="flex items-center">
 
-        <img src="/assets/images/photos/jacobcarterheadshot.png" alt="headshot of jacob carter" class="aspect-square rounded-full w-24">
+        <div class="w-24 rounded-full aspect-square" style="background-image: url('/assets/images/photos/jacobcarterheadshot.png')">
+
+        </div>
         <div class="ml-4">
           <strong class="text-white m-0 font-size-22">
             Jacob J. Carter
@@ -86,6 +88,8 @@ export default {
   main {
     z-index: 9999;
     background-color: #0e0e0e;
+    max-height: 100vh;
+    
   }
 
   h2 {
