@@ -1,8 +1,8 @@
 <template>
 
-  <main class="fixed top-0 left-0 bottom-0 right-0 flex items-center px-20">
+  <main class="fixed top-0 left-0 bottom-0 right-0 flex items-center px-4 md:px-16 lg:px-20">
 
-    <article class="w-2/3">
+    <article class="">
       <a href="https://onegoodcard.me/profile/jacobcarter" target="_blank">
 
         <div class="flex items-center">
@@ -26,7 +26,7 @@
         Our website is coming soon!
       </h2>
 
-      <p class="text-white font-size-20 lg:w-1/2 mt-8">
+      <p class="text-white font-size-20 md:w-2/3 lg:w-1/2 mt-8">
         Thank you for being patient. We’re doing some work on the website, so feel free to check back in later. If you have any inquiries please don’t hesitate to contact me through my details below:
       </p>
 
@@ -89,15 +89,22 @@ export default {
     z-index: 9999;
     background-color: #0e0e0e;
     max-height: 100vh;
+
     
+  }
+  article {
+    max-width: 110em;
+    margin:0 auto;
   }
 
   h2 {
     font-family: 'Felix', 'Montserrat' ,sans-serif;
+    max-width: 10em;
   }
 
   strong, p, a {
     font-family: 'Montserrat', sans-serif;
+    max-width: 95ch;
   }
 
 </style>
