@@ -31,8 +31,8 @@ export default {
 
 
 <style scoped lang="scss">
-  @use '../sass/abstracts' as *;
-  @use '../sass/themes' as *;
+  @use '../../sass/abstracts' as *;
+  @use '../../sass/themes' as *;
 
   button {
     background-color: $primary-50;

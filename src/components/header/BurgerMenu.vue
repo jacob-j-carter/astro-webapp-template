@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import pageData from "../../data/pageData.json";
-import Button from "../Button.vue";
+import Button from "../interactive/Button.vue";
 import { Icon } from '@iconify/vue';
 
 
