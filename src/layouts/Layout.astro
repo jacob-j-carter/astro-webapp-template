@@ -8,7 +8,8 @@ import Footer from '../layouts/Footer.vue';
 
 
 // Cheeky Components
-import Coffee from '../components/Coffee.astro'
+import Coffee from '../components/Coffee.astro';
+import ComingSoon from '../components/utility/ComingSoon.vue';
 
 
 
@@ -48,6 +49,9 @@ const { title = "Astro Webapp", page } = Astro.props as Props;
   </head>
   <body>
     
+    <ComingSoon />
+
+
     <!-- 'Skip to main content' button for accessability -->
     <a href="#main-content" class="skip-main-content">
       Skip to main content
