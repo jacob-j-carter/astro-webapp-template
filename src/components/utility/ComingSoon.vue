@@ -3,7 +3,7 @@
   <main class="fixed top-0 left-0 bottom-0 right-0 flex items-center px-4 md:px-16 lg:px-20">
 
     <article class="">
-      <a href="https://onegoodcard.me/profile/jacobcarter" target="_blank">
+      <a href="https://onegoodcard.me/profile/jacobcarter" target="_blank" class="hidden md:block">
 
         <div class="flex items-center">
 
@@ -22,15 +22,15 @@
         </div>
 
       </a>
-      <h2 class="text-white font-size-84 lg:w-2/3 mt-8">
+      <h2 class="text-white font-size-84 lg:w-2/3 md:mt-8">
         Our website is coming soon!
       </h2>
 
-      <p class="text-white font-size-20 md:w-2/3 lg:w-1/2 mt-8">
+      <p class="text-white font-size-20 md:w-2/3 lg:w-1/2 mt-2 md:mt-8">
         Thank you for being patient. We’re doing some work on the website, so feel free to check back in later. If you have any inquiries please don’t hesitate to contact me through my details below:
       </p>
 
-      <div class="mt-16">
+      <div class="mt-2 md:mt-16">
         <div class="flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>
           <a href="mailto:jacob@choicedigital.studio" class="text-white font-size-20 underline ml-4">
