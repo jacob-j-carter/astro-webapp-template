@@ -9,7 +9,7 @@
       </div>
 
       <div :key="page.pageName" v-for="page in pages" class="my-4">
-        <a :href="page.pageHREF">
+        <a :href="page.pageHREF" @click="$emit('close-nav')">
           <h3 class="uppercase text-white" :class="[pageName == page.pageName ? 'underline' : '']">
             {{ page.pageName }}
           </h3>
