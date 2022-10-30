@@ -21,14 +21,12 @@
 
 <script lang="ts">
 import pageData from "../../data/pageData.json";
-import Button from "../interactive/Button.vue";
 import { Icon } from '@iconify/vue';
 
 
 export default {
   name: "BurgerMenu",
   components: {
-    Button,
     Icon
 },
   props: {
