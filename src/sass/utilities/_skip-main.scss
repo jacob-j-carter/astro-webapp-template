@@ -6,6 +6,7 @@
   background-color: #181818;
   color: white;
   position: fixed;
+  font-family: $button-font;
   height: 3em;
   top: 0;
   left: 0;
@@ -13,7 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   text-decoration: underline;
   translate: 0 -100% ; //Makes link hidden for normal users.
   transition: translate 100ms linear;
