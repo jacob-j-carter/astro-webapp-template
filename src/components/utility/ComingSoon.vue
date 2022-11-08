@@ -55,13 +55,12 @@
 
 
 <script lang="ts">
-import { Icon } from '@iconify/vue';
 
 export default {
   name: 'ComingSoon',
-  components: {
-		Icon,
-	},
+  // components: {
+
+	// },
   // props: {
 
   // },

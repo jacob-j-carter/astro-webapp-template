@@ -4,7 +4,6 @@
     <header class="w-full h-16 bg-stone-700 flex items-center px-8">
 
       <div class="flex items-center w-1/3">
-        <img src="/favicon.svg" alt="" class="w-12">
         <h6 class="text-white ml-2">ASTRO TEMPLATE</h6>
       </div>
 
@@ -20,7 +19,6 @@
 
 <script lang="ts">
 import pageData from '../../data/pageData.json';
-import { Icon } from '@iconify/vue';
 
 export default {
   name: 'DesktopHeader',
@@ -32,9 +30,9 @@ export default {
       pages: pageData,
     };
   },
-  components: {
-		Icon,
-	},
+  // components: {
+    
+	// },
   // data () {
   //   return {
       

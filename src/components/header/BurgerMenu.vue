@@ -5,7 +5,7 @@
       :class="[navHidden ? 'nav-hidden' : '']"
     >
       <div @click="$emit('close-nav')">
-        <Icon icon="ei:close" width="32" class="text-white absolute right-4 top-4 w-8 h-8" />
+        <img src="/assets/images/seo/favicon.png" alt="" class="w-8 h-8 top-0 right-0 absolute m-2">
       </div>
 
       <div :key="page.pageName" v-for="page in pages" class="my-4">
@@ -21,14 +21,13 @@
 
 <script lang="ts">
 import pageData from "../../data/pageData.json";
-import { Icon } from '@iconify/vue';
 
 
 export default {
   name: "BurgerMenu",
   components: {
-    Icon
-},
+
+  },
   props: {
     pageName: {
       type: String
