@@ -1,3 +1,3 @@
 User-Agent: *
 Allow: /
-Sitemap: https://iamjacobcarter.com/sitemap.xml
+Sitemap: /sitemap.xml
