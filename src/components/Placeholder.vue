@@ -11,9 +11,9 @@
 
 export default {
   name: 'Placeholder',
-  components: {
+  // components: {
 
-	},
+	// },
   // props: {
 
   // },
