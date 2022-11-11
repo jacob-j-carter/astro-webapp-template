@@ -8,6 +8,9 @@ module.exports = {
 				'100': '25rem',
 				'128': '32rem',
 				'144': '36rem',
+			},
+			aspectRatio: {
+				'portrait': '2 / 3',
 			}
 		},
 		fontFamily: {
