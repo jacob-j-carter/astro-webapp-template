@@ -83,27 +83,11 @@ $heading-font: sans-serif;
 $button-font: sans-serif;
 $body-font: sans-serif;
 
-.heading-font {
-  font-family: $heading-font;
-}
-.button-font {
-  font-family: $button-font;
-}
-.body-font {
-  font-family: $body-font;
-}
-
 
 // ==== Text Styling ====
 // html {
 //   font-size: 62.5%;
 // }
-
-h1, h2, h3, h4, h5, h6 {
-  // Headings tend to look better with smaller line-height:
-  line-height: 120%;
-  font-family: $heading-font;
-}
 
 // === Default Element Font Sizes ===
 // == Headings ==
@@ -131,5 +115,4 @@ p, a, b, strong, em, i, button, mark, select, blockquote, input {
   @include font-size(16rem, 16vw);
   // Sets line-height for all non-heading text:
   line-height: 140%;
-  font-family: $body-font;
 }
