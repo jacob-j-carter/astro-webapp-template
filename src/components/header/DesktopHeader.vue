@@ -1,10 +1,10 @@
 <template>
   <div class="hidden lg:flex">
 
-    <header class="w-full h-16 bg-stone-700 flex items-center px-8">
+    <header class="w-full h-16 bg-primary flex items-center px-8">
 
       <div class="flex items-center w-1/3">
-        <h6 class="text-black ml-2 font-body">ASTRO TEMPLATE</h6>
+        <h6 class="text-white ml-2 font-body">ASTRO TEMPLATE</h6>
       </div>
 
       <div class="w-2/3 flex items-center justify-end text-white">
