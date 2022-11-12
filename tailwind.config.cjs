@@ -30,7 +30,7 @@ module.exports = {
 			borderWidth: {
 				'1': '1px',
 				'3': '3px'
-			},
+			},	
 			fontSize: {
 				'4': ['calc(4rem / 16)', '140%'],
 				'6': ['calc(6rem / 16)', '140%'],
@@ -64,15 +64,9 @@ module.exports = {
 			},
 			colors: {
 				'primary': {
-					100: '#cffafe',
-					200: '#a5f3fc',
-					300: '#67e8f9',
-					400: '#22d3ee',
-					500: '#06b6d4',
+					'light': '#a5f3fc',
 					DEFAULT: '#0891b2',
-					700: '#0e7490',
-					800: '#155e75',
-					900: '#164e63',
+					
 				},
 			}
 		},

@@ -1,2 +1,6 @@
 @use '../abstracts' as *;
 @use '../themes' as *;
+
+html {
+  cursor: auto;
+}
