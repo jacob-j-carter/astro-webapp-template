@@ -17,6 +17,10 @@ module.exports = {
 			heading: ['Felix', 'serif'],
 			body: ['Montserrat', 'sans-serif'],
 			button: ['Montserrat', 'sans-serif']
+		},
+		borderWidth: {
+			'1': '1px',
+			'3': '3px'
 		}
 	},
 	plugins: [],
