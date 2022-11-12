@@ -11,6 +11,16 @@ module.exports = {
 			},
 			aspectRatio: {
 				'portrait': '2 / 3',
+			},
+			dropShadow: {
+				'smooth': [
+								'2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02)',
+                '6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028)',
+                '12.5px 12.5px 10px rgba(0, 0, 0, 0.035)',
+                '22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042)',
+                '41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05)',
+                '100px 100px 80px rgba(0, 0, 0, 0.07)'
+								]
 			}
 		},
 		fontFamily: {
@@ -23,6 +33,8 @@ module.exports = {
 			'3': '3px'
 		},
 		fontSize: {
+			'4': ['calc(4rem / 16)', '140%'],
+			'6': ['calc(6rem / 16)', '140%'],
 			'8': ['calc(8rem / 16)', '140%'],
 			'10': ['calc(10rem / 16)', '140%'],
 			'12': ['calc(12rem / 16)', '140%'],
